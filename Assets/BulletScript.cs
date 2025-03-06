@@ -12,9 +12,13 @@ public class BulletScript : MonoBehaviour
         rb.linearVelocity = transform.up * speed;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        Destroy(gameObject);
+        if (hitInfo.tag != "Bullet")
+            {
+                Destroy(gameObject);
+            }
+
     }
 
 }

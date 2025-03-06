@@ -4,10 +4,6 @@ using UnityEngine.SceneManagement;
 public class SceneControl : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -19,7 +15,9 @@ public class SceneControl : MonoBehaviour
                 SceneManager.LoadScene("Fase2");
             } else if(scene.name == "Fase2"){
                 SceneManager.LoadScene("Fase3");
+            } else if(scene.name == "Fase3"){
+                SceneManager.LoadScene("Ganhou");
             }
-        }
+        } 
     }
 }

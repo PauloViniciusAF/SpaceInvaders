@@ -14,7 +14,6 @@ public class ShootScript : MonoBehaviour
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
             Instantiate(bulletPrefab, shootingPoint.position, transform.rotation);
-        }
-        
+        }         
     }
 }

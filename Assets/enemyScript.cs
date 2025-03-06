@@ -10,6 +10,11 @@ public class enemyScript : MonoBehaviour
     private float x;
     private float speed = 1.0f;
     // Start is called before the first frame update
+    private float timeBtwShots;
+    public float startTimeBtwShots;
+
+    public GameObject shot;
+
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();  

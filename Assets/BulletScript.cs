@@ -14,11 +14,10 @@ public class BulletScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        if (hitInfo.tag != "Bullet")
+        if (hitInfo.tag != "Bullet" & hitInfo.tag != "BulletEnemy")
             {
                 Destroy(gameObject);
             }
-
     }
 
 }

@@ -18,6 +18,6 @@ public class SceneControl : MonoBehaviour
             } else if(scene.name == "Fase3"){
                 SceneManager.LoadScene("Ganhou");
             }
-        } 
+        }
     }
 }

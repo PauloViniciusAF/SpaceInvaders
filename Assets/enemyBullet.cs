@@ -18,6 +18,13 @@ public class enemyBullet : MonoBehaviour
         }
         
     }
+    private void OnTriggerEnter2D(Collider2D hitInfo)
+    {
+        if (hitInfo.tag != "Bullet" & hitInfo.tag != "BulletEnemy" & hitInfo.tag != "enemy")
+            {
+                Destroy(gameObject);
+            }
+    }
    
 
 

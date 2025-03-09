@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static int Vidas = 0; // Pontuação do player 2
     
     // Start is called before the first frame update
     void Start()

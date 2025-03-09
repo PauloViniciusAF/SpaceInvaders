@@ -7,15 +7,12 @@ public class ScriptPlayer : MonoBehaviour
     // Start is called before the first frame update
   void Start () {
     rb2d = GetComponent<Rigidbody2D>();     
-
-
 }
-        
+
     public KeyCode moveLeft = KeyCode.A;     
     public KeyCode moveRight = KeyCode.D;   
     public float speed = 10.0f;          
-    public float boundX = 0.0f;     
-    public int lives = 3;     
+    public float boundX = 0.0f;         
     private Rigidbody2D rb2d;            
 
     void Update () {
@@ -34,15 +31,7 @@ public class ScriptPlayer : MonoBehaviour
     var pos = transform.position;         
     transform.position = pos;              
    
-}
-
-    private void OnTriggerEnter2D (Collider2D hitInfo) {
-            if (hitInfo.tag == "BulletEnemy")
-                {
-                    Destroy(gameObject);
-                }
-    }
-    
+}    
 
 }
 
